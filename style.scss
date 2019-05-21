@@ -11,24 +11,24 @@ body {
   display: grid;
   grid-template: repeat(5, 100px) / repeat(7, 100px);
   grid-gap: 1px;
-}
 
+  & > div {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: black;
+    line-height: 100px;
+    text-align: center;
+  }
 
-.calendar > div {
-  box-sizing: border-box;
-  width: 100px;
-  height: 100px;
-  background: #eee;
-  border: 1px solid black;
-  font-family: Arial, sans-serif;
-  font-size: 30px;
-  color: black;
-  line-height: 100px;
-  text-align: center;
-}
-div:hover {
-  cursor: pointer;
-  animation: rise 0.5s linear;
+  & > div:hover {
+    cursor: pointer;
+    animation: rise 0.5s linear;
+  }
 }
 
 @keyframes rise {
@@ -61,7 +61,7 @@ div:hover {
   }
 }
 
-.calendar-30>div:last-child {
+.calendar-30 > div:last-child {
     display: none;
   }
 

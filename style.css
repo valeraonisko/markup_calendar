@@ -11,7 +11,6 @@ body {
   grid-template: repeat(5, 100px)/repeat(7, 100px);
   grid-gap: 1px;
 }
-
 .calendar > div {
   box-sizing: border-box;
   width: 100px;
@@ -24,8 +23,7 @@ body {
   line-height: 100px;
   text-align: center;
 }
-
-div:hover {
+.calendar > div:hover {
   cursor: pointer;
   animation: rise 0.5s linear;
 }
